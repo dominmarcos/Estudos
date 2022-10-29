@@ -211,15 +211,15 @@ public class BatalhaNavalBKP {
     public static void verificarTiro(String[][] mattrab, int x) throws InterruptedException {
         int a, b;
         if (x == 0) {
-//            Scanner sc = new Scanner(System.in);
+            Scanner sc = new Scanner(System.in);
             System.out.println("                                             Coordenadas do tiro:");
             System.out.print("                                                ->");
-//            a = sc.nextInt();
-            Thread.sleep(1000);
-            a = (int) (Math.random() * 15) + 1;
-            b = (int) (Math.random() * 15) + 1;
+            a = sc.nextInt();
+//            Thread.sleep(1000);
+//            a = (int) (Math.random() * 15) + 1;
+//            b = (int) (Math.random() * 15) + 1;
             System.out.print("                                                ->");
-//            b = sc.nextInt();
+            b = sc.nextInt();
         } else {
             a = (int) (Math.random() * 15) + 1;
             b = (int) (Math.random() * 15) + 1;
